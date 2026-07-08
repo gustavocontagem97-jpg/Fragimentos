@@ -1457,3 +1457,12 @@ justify-content:center;
 }
 
 }
+
+/* V2 desktop improvements */
+body{background:radial-gradient(circle at top,#20202a 0%,#121218 35%,#090909 100%) fixed;}
+.hero,.container,.section-title,.download-box{max-width:1400px;margin-left:auto;margin-right:auto;}
+section{padding:110px 6%;}
+.cards,.area-grid,.skills{max-width:1400px;margin:40px auto 0;}
+.card,.area-card,.skill{max-width:360px;margin:auto;}
+.hero{min-height:100vh;}
+.hero-image{min-height:700px;}
