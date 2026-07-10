@@ -1026,6 +1026,38 @@ border-radius:15px;
 
 margin-bottom:25px;
 
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.ending-icon{
+
+width:70px;
+
+height:70px;
+
+fill:none;
+
+stroke-width:1.6;
+
+stroke-linecap:round;
+
+stroke-linejoin:round;
+
+position:relative;
+
+z-index:1;
+
+transition:.5s;
+
 }
 
 .bad-ending{
@@ -1034,9 +1066,85 @@ border-left:4px solid #731515;
 
 }
 
+.bad-ending .ending-image{
+
+background:radial-gradient(circle at 50% 45%,rgba(115,21,21,.18),#181818 70%);
+
+}
+
+.bad-ending .ending-icon{
+
+stroke:#a83232;
+
+filter:drop-shadow(0 0 6px rgba(168,50,50,.35));
+
+}
+
+.bad-ending:hover .ending-icon{
+
+stroke:#d14444;
+
+filter:drop-shadow(0 0 12px rgba(209,68,68,.55));
+
+}
+
 .good-ending{
 
 border-left:4px solid #999;
+
+}
+
+.good-ending .ending-image{
+
+background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.08),#181818 70%);
+
+}
+
+.good-ending .ending-icon{
+
+stroke:#c9c9c9;
+
+filter:drop-shadow(0 0 6px rgba(255,255,255,.25));
+
+}
+
+.good-ending:hover .ending-icon{
+
+stroke:#f2f2f2;
+
+filter:drop-shadow(0 0 14px rgba(255,255,255,.5));
+
+}
+
+.ending-reflection{
+
+max-width:700px;
+
+margin:55px auto 0;
+
+padding:35px 40px;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.ending-reflection p{
+
+font-family:"Cinzel",serif;
+
+font-style:italic;
+
+font-size:17px;
+
+line-height:2;
+
+color:#9c9c9c;
+
+letter-spacing:.3px;
 
 }
 
@@ -1055,6 +1163,84 @@ margin-bottom:15px;
 color:#bcbcbc;
 
 line-height:1.8;
+
+}
+
+/* ===========================
+   PLACEHOLDERS DE IMAGEM
+=========================== */
+
+.hero-image,
+.image,
+.photo,
+.area-image,
+.boss-image{
+
+position:relative;
+
+}
+
+.img-placeholder{
+
+position:absolute;
+
+inset:0;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+gap:6px;
+
+border:1px dashed rgba(255,255,255,.15);
+
+border-radius:inherit;
+
+padding:10px;
+
+text-align:center;
+
+box-sizing:border-box;
+
+}
+
+.img-placeholder-icon{
+
+font-size:22px;
+
+opacity:.4;
+
+}
+
+.img-placeholder-text{
+
+font-family:"Inter",sans-serif;
+
+font-size:12px;
+
+font-weight:500;
+
+color:#8a8a8a;
+
+letter-spacing:.3px;
+
+}
+
+.img-placeholder-hint{
+
+font-family:"Inter",sans-serif;
+
+font-size:10px;
+
+color:#555;
+
+text-transform:uppercase;
+
+letter-spacing:1.2px;
 
 }
 
