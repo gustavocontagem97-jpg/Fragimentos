@@ -831,3 +831,4 @@ function animationLoop(now) {
 requestAnimationFrame(animationLoop);
 
 console.log("Particles V2 Loaded");
+window.addEventListener('DOMContentLoaded',()=>{const a=document.getElementById('bgMusic');if(a)a.volume=0.2;});
